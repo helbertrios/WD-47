@@ -1,18 +1,14 @@
-var botao = document.querySelector("#botaoaviso");
-botao.addEventListener("click", function (evento) {
-                    
-                var aviso = document.querySelector(".aviso");
-    
-                aviso.classList.toggle("invisivel");
+var aviso = document.querySelector(".aviso");
+var botao = document.createElement("button");
 
-                if (aviso.classList.contains("invisivel") ) {
-                    this.textContent = "Mostrar";                                   
-                } else {
-                    this.textContent = "Esconder";
-                }
-                
-               
-                
+botao.id = "botaoaviso";
+botao.textContent = "Esconder aviso";
+
+aviso.parentNode.insertBefore(botao, aviso);
+
+botao.addEventListener("click", function (evento) {
+                aviso.classList.toggle("invisivel");
+                this.textContent = aviso.classList.contains("invisivel") ? "Mostrar aviso" : "Esconder aviso";     
 });
     
                         
