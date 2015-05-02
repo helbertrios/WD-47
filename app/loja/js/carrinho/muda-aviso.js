@@ -3,13 +3,15 @@ botao.addEventListener("click", function (evento) {
                     
                 var aviso = document.querySelector(".aviso");
     
+                aviso.classList.toggle("invisivel");
+
                 if (aviso.classList.contains("invisivel") ) {
-                    this.textContent = "Esconder";                                   
+                    this.textContent = "Mostrar";                                   
                 } else {
-                    this.textContent = "Mostrar";
+                    this.textContent = "Esconder";
                 }
                 
-                aviso.classList.toggle("invisivel")
+               
                 
 });
     
