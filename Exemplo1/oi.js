@@ -1,0 +1,1 @@
+alert("Batatinha quando nasce espalha as ramas pelo chão, menininha quando dorme põe a mão no coração.");
