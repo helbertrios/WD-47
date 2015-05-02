@@ -1,4 +1,7 @@
-function adicionarSugestao() {
+var removerSugestao = function(event) {
+     $(this).remove();
+}
+var adicionarSugestao = function () {
     var digitado = $("input[type=text]").val();
     if (digitado != "") {
         $("<li>")
@@ -8,6 +11,8 @@ function adicionarSugestao() {
         $("input[type=text]").val("").focus();
     }
 }
+
+
 
 $("input[type=button]").click( function(event) {
     adicionarSugestao();
@@ -21,8 +26,5 @@ $('input[type=text]').keypress(function(event){
     }
 });
 
-
-$(".sugestoes li").dblclick(function(event) {
-        $(this).remove();
-});
+$(".sugestoes").on("dblclick", "li", removerSugestao);
 
