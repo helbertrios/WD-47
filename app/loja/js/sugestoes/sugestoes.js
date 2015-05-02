@@ -1,5 +1,4 @@
-var removerSugestao = function(event) {
-     $(this).remove();
+var removerSugestao = function(event) { $(this).remove() };
 }
 var adicionarSugestao = function () {
     var digitado = $("input[type=text]").val();
