@@ -1,3 +1,4 @@
+
 var aviso = document.querySelector(".aviso");
 var botao = document.createElement("button");
 
@@ -10,5 +11,4 @@ botao.addEventListener("click", function (evento) {
                 aviso.classList.toggle("invisivel");
                 this.textContent = aviso.classList.contains("invisivel") ? "Mostrar aviso" : "Esconder aviso";     
 });
-    
-                        
+                 
