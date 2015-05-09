@@ -1,5 +1,5 @@
 (
-    function () {
+    function (fm) {
         var quantidades = document.querySelectorAll("input[id$=quantidade]");
 
         for (var i = 0; i < quantidades.length; i++) {
@@ -9,11 +9,11 @@
                 var quantidade = this.value;
                 var li = this.parentNode.parentNode.parentNode;
                 var spanUnitario = li.querySelector("span[id$=unit]");
-                var valorUnitario = formatador.realParaNumber(spanUnitario.textContent);
+                var valorUnitario = fm.realParaNumber(spanUnitario.textContent);
                 var novoTotal = quantidade * valorUnitario;
                 var spanTotal = li.querySelector("span[id$=total]");
-                spanTotal.textContent = formatador.numberParaReal(novoTotal);
+                spanTotal.textContent = fm.numberParaReal(novoTotal);
             });
          }
     }
-)();
+)(formatador);

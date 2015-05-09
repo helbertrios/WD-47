@@ -6,6 +6,7 @@
     <link href="css/reset.css" rel="stylesheet"/>
     <link href="css/estilos.css" rel="stylesheet"/>
     <link href="css/carrinho.css" rel="stylesheet"/>
+
   </head>
   <body>
 
@@ -27,7 +28,8 @@
       </nav>
     </header>
 
-    <div id="principal" class="container">           
+    <div id="principal" class="container">
+        <!-- button class="formataBotaoAviso" id="botaoAviso">Esconder Aviso</button -->
 			<div class="aviso">
 				<ul>
  					<li>Todas as bolsas nacionais com 30% de desconto</li>
@@ -51,7 +53,7 @@
             <p>
               <label for="item1_quantidade">Quantidade:</label>
               <input id="item1_quantidade" type="text" value="1" maxlength="2"/>
-              <a href="#">Excluir</a>
+               <a href="#">Excluir</a>
             </p>
           </form>
           <p>Valor total: <span id="item1_valor_total">R$ 120,00</span></p>
@@ -108,7 +110,6 @@
           <input id="input_cep" type="text" />
           <input type="submit" value="Consultar" />
         </form>
-          <br />
         <p class="resultado_cep"></p>
       </div>
     </div><!-- fim do conteudo principal -->
@@ -123,15 +124,18 @@
           <li><a href="http://plus.google.com/mirrorfashion">Google+</a></li>
         </ul>
 
-      </div>=
+      </div>
     </footer>
       <script src="js/lib/jquery.js"></script>
-      <script src="js/carrinho/filtro-digitacao.js"></script>
+      <script src="js/carrinho/exclusao.js"></script>
+      <script src="js/lib/jquery.confirm.min.js"></script>
+      <script src="js/carrinho/input-filtro.js"></script>
       <script src="js/modules/moeda.js"></script>
       <script src="js/carrinho/calcula-valor-total.js"></script>
-      <script src="js/carrinho/aviso-jquery.js"></script>
-      <script src="js/carrinho/exclusao.js"></script>
-      <script src="js/carrinho/cep.js"></script>
+      <script src="js/carrinho/muda-aviso.js"></script>
+      <!-- script src="js/carrinho/aviso-jquery.js"></script -->
+      <script src="js/carrinho/cep.js"></script>      
       <script src="js/carrinho/recomendacoes.js"></script>
+
   </body>
 </html>
