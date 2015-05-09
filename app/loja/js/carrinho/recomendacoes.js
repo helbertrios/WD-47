@@ -3,7 +3,7 @@ function trataNovoProduto(produto, lista) {
         $("<li>")
         .append($("<img>").attr("src", produto.imagem))
         .append($("<p>").text(produto.nome))
-        .append($("<p>").text(numberParaReal(produto.preco)))
+        .append($("<p>").text(formatador.numberParaReal(produto.preco)))
         .appendTo(lista);
 }
 
