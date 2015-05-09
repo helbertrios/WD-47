@@ -1,0 +1,8 @@
+{
+    "produtos":
+        [
+            { "nome":"Blusa", "preco":60}
+            { "nome":"Calça", "preco":240}
+            { "nome":"Vestido", "preco":480}
+        ]
+}
