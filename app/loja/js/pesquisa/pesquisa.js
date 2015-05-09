@@ -1,5 +1,5 @@
 $(".filtro input").on("input", function (event) {
-    var digitado = $(this).val();
+    var digitado = $(this).val().trim();
     var itens = $("#carrinho li");
     if (digitado) {
         itens.hide()
