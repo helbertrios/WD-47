@@ -1,5 +1,4 @@
-setInterval(
-    function() {
+var buscaRecomendacoes = function() {
         $.getJSON("http://mirrorfashion.caelum.com.br/produtos?callback=?",
             function(resposta) {
                 var produtos = resposta.produtos;
@@ -14,4 +13,9 @@ setInterval(
                 });
                 $("#recomendacoes").find("ul").remove().end().append(lista);
             })
-    }, 5000);
+    }
+
+buscaRecomendacoes();
+setInterval(buscaRecomendacoes(), 5000);
+
+
