@@ -7,10 +7,11 @@ setInterval(
                 $.each(produtos, function () {
                     var produto = this;
                         $("<li>")
+                        .append($("<img>").attr("src", produto.imagem))
                         .append($("<p>").text(produto.nome))
                         .append($("<p>").text(numberParaReal(produto.preco)))
                         .appendTo(lista);
                 });
                 $("#recomendacoes").find("ul").remove().end().append(lista);
             })
-    }, 1000);
+    }, 5000);
